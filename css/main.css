@@ -6,6 +6,14 @@ body {
   font-weight: 400;
   background: #fff;
 }
+#status {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+}
+#status:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 a:hover { 
     background-color: red;
 }
@@ -700,6 +708,9 @@ a:focus {
 }
 .contact-form .form-control {
   margin-bottom: 28px;
+}
+label#name-error.error, label#EMAIL-error.error, label#message-error.error {
+  color: red;
 }
 #footer {
   position: relative;

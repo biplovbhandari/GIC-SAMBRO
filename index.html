@@ -3,8 +3,8 @@
 
   <head>  	
   	<meta charset="utf-8">
-    <meta name="description" content="Responsive Bootstrap Landing Page Template">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="description" content="CAP Implementation by GIC">
+    <meta name="keywords" content="CAP, SAMBRO, GIC, Sahana, Sahana Alerting and Messaging Broker">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
     <link rel="shortcut icon" href="gic.ico" type="image/x-icon" />
@@ -489,26 +489,27 @@
             </div>
           </div>
           <div class="col-md-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">Love to Hear From You</h2>
+            <div id="form-container">
+              <h2 class="section-title" id="form-header">Love to Hear From You</h2>
 
-            <!--<div class="text-center">
-                <h3><a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/">You are Using Free Version, Purchase Full Version to Get All Elements/Pages</a></h3>
-                <a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/" class="btn btn-larg btn-primary">Purchase Now</a>
-            </div>-->
-            <form class="contact-form" role="form" method="post">
-              <i class="mdi-action-account-box"></i>
-              <input type="text" class="form-control" name="name" placeholder="Name">
-            
-              <i class="mdi-content-mail"></i>
-              <input type="email" class="form-control" name="EMAIL" placeholder="Email">                  
-                                    
-              <textarea class="form-control" placeholder="Message" rows="4"></textarea>              
-              <button type="submit" id="submit" class="btn btn-lg btn-primary">Send Message</button>
-              <div id="success" style="color:#3F51B5;">
-              </div>
-            </form>
-
-
+              <!--<div class="text-center">
+                  <h3><a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/">You are Using Free Version, Purchase Full Version to Get All Elements/Pages</a></h3>
+                  <a href="https://graygrids.com/item/pluto-material-design-free-bootstrap-template/" class="btn btn-larg btn-primary">Purchase Now</a>
+              </div>-->
+              <form class="contact-form" role="form" method="post">
+                <i class="mdi-action-account-box"></i>
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              
+                <i class="mdi-content-mail"></i>
+                <input type="email" class="form-control" name="EMAIL" placeholder="Email">                  
+                                      
+                <textarea class="form-control" name="message" placeholder="Message" rows="4"></textarea>              
+                <button type="submit" id="submit" class="btn btn-lg btn-primary" style="display:block;">Send Message</button>
+              </form>
+            </div>
+            <div id="status" style="height: 10em; margin:auto auto;">
+              <p id="statusInfo" align="justify" style="font-size: x-large; padding:10px; position: relative;"></p>
+            </div>
           </div>
         </div>
       </div>
@@ -573,6 +574,7 @@
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/ripples.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/wow.js"></script>
@@ -583,6 +585,7 @@
     <script src="js/jquery.nav.js"></script>      
     <script src="js/smooth-on-scroll.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/form.validation.js"></script>
     <script src="js/main.js"></script>
 
     
